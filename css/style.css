@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	background-color: white;
+	text-align: center;
+	flex-direction: column;
+	padding-top: 2%;
+}
+
+button {
+	background-color: #72C3DC;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	border-bottom: solid thick rgb(97, 181, 181);
+	border-radius: 5px;
+	margin-right: 5px;
+	width: 90px;
+	height: 45px;
+}
+
+h3 {
+	color: black;
+	text-align: center;
+}
+
+@media only screen and (min-width: 376px) {
+	.container {
+		display: table;
+		width: 100%;
+		background: #efefef;
+        height: 500px;
+        border-top: solid rgb(149, 153, 153);
+	}
+	.numbers-container {
+        padding-bottom: 5px;
+		left: 0px;
+		width: 80%;
+	}
+	.buttons-container {
+		position: absolute;
+		right: 0px;
+		width: 20%;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		justify-content: space-evenly;
+		font-family: 'Audiowide';
+		color: #E4FDE1;
+	}
+	ul li {
+		background: #456990;
+		width: 33.33%;
+		height: 150px;
+		border: 1px solid transparent;
+		text-align: center;
+		font-size: 2rem;
+		padding-top: 4rem;
+		color: white;
+	}
+	button {
+		width: 80%;
+		margin-bottom: 6px;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 376px) {
+	h3 {
+		color: white;
+		text-align: center;
+	}
+	body {
+		display: flex;
+		background-color: black;
+		text-align: center;
+		flex-direction: column;
+		padding: 2%;
+		margin-bottom: 3px;
+	}
+	.container {
+		display: table;
+		width: 100%;
+		background: white;
+		height: 450px;
+		padding-top: 2px;
+	}
+	.buttons-container {
+		display: inline-flex;
+		text-align: center;
+	}
+	ul li {
+		position: relative;
+		z-index: 9;
+		height: 35px;
+		text-align: center;
+		vertical-align: middle;
+		padding: 12px;
+		margin-bottom: 2px;
+	}
+	ul li:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 5%;
+		bottom: 0;
+		right: 0;
+		text-align: center;
+		background: #efefef;
+		border: 1px solid #efefef;
+	}
+	.numbers-container {
+		padding: 5px;
+	}
+}
